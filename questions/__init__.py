@@ -19,11 +19,32 @@
 # print (three(5))
 # print (three(9))
 
-def one(string):
-    new_string=""
-    for i in range(0, len(string)):
-        new_string += string[i]*3
+# def one(string):
+#     new_string=""
+#     for i in range(0, len(string)):
+#         new_string += string[i]*3
+#     return new_string
+
+# print(one("one"))
+# print(one("hihihi"))
+
+# def four(string1, string2):
+#     new_string = ""
+#     for i, j  in zip((0, len(string1)), (0, len(string2))):
+#         new_string += string[i] + string[j]
+    
+#     return new_string
+
+# print(four("String","Fridge"))
+
+def four(string1, string2):
+    new_string = ""
+    for i in range(0, len(string1)):
+        new_string += string1[i] + string2[i]
+    
     return new_string
 
-print(one("one"))
-print(one("hihihi"))
+print(four("String","Fridge"))
+print(four("return","letter"))
+
+
