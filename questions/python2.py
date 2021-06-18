@@ -31,6 +31,9 @@
 # How does a for loop iterate through a string?
 
 def one(string):
+    for i in string:
+        print ()
+
     return ""
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,7 +55,16 @@ def one(string):
 
 
 def two(number):
-    return False
+    prime = True 
+    if number < 1:
+        prime = False
+    if number > 1:
+        for i in range (2, number):
+            if number % i == 0:
+                prime = False
+
+    return prime
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
