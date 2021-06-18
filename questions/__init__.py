@@ -48,16 +48,24 @@
 # print(four("return","letter"))
 
 
-import random 
+# import random 
 
-def five():
-    values=[]
-    while len(values) < 5:
-        a = random.randint(100,200)
-        if a % 2 == 0:
-            values.append(a)
-    return values 
+# def five():
+#     values=[]
+#     while len(values) < 5:
+#         a = random.randint(100,200)
+#         if a % 2 == 0:
+#             values.append(a)
+#     return values 
 
-print(five())
+# print(five())
 
 
+# def six(string):
+#     if string[-2:] == "py":
+#         return True
+#     else:
+#         return False
+
+# print(six("pyiscool"))
+# print(six("welovepy"))
