@@ -199,7 +199,9 @@ def six(string):
 
 
 def seven(a, b, c):
-    return False
+    num_list = [a,b,c]
+    num_list.sort()
+    return abs(num_list[1]-num_list[0]) == abs(num_list[2]-num_list[1])
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 

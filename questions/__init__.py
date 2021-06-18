@@ -69,3 +69,16 @@
 
 # print(six("pyiscool"))
 # print(six("welovepy"))
+
+# def seven(a, b, c):
+#     return abs(a-b) == abs(b-c)
+
+# print(seven(4,6,2))
+
+def seven(a, b, c):
+    num_list = [a,b,c]
+    num_list.sort()
+    return abs(num_list[1]-num_list[0]) == abs(num_list[2]-num_list[1])
+
+print(seven(2,4,6))
+
