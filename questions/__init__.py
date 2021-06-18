@@ -37,14 +37,27 @@
 
 # print(four("String","Fridge"))
 
-def four(string1, string2):
-    new_string = ""
-    for i in range(0, len(string1)):
-        new_string += string1[i] + string2[i]
+# def four(string1, string2):
+#     new_string = ""
+#     for i in range(0, len(string1)):
+#         new_string += string1[i] + string2[i]
     
-    return new_string
+#     return new_string
 
-print(four("String","Fridge"))
-print(four("return","letter"))
+# print(four("String","Fridge"))
+# print(four("return","letter"))
+
+
+import random 
+
+def five():
+    values=[]
+    while len(values) < 5:
+        a = random.randint(100,200)
+        if a % 2 == 0:
+            values.append(a)
+    return values 
+
+print(five())
 
 
