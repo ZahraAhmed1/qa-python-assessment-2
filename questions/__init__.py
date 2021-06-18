@@ -13,8 +13,17 @@
 # print (two(16))
 # print( two(19))
 
-def three(a):
-    return (a*1111) + (a*111) + (a*11) + (a)
+# def three(a):
+#     return (a*1111) + (a*111) + (a*11) + (a)
 
-print (three(5))
-print (three(9))
+# print (three(5))
+# print (three(9))
+
+def one(string):
+    new_string=""
+    for i in range(0, len(string)):
+        new_string += string[i]*3
+    return new_string
+
+print(one("one"))
+print(one("hihihi"))
